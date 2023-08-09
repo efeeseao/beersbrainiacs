@@ -51,7 +51,7 @@ export const Navbar = () => {
             <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => (
                 <li key={idx} className="hover:text-gray-900">
-                  <Link href={item.path} scroll={false} className="block">
+                  <Link href={item.path} scroll={true} className="block">
                     {item.name}
                   </Link>
                 </li>
