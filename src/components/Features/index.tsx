@@ -2,7 +2,7 @@ import { DarkWrapper } from '@/components/DarkWrapper'
 import { features } from '@/data/values'
 
 export const Features = () => (
-  <DarkWrapper id="features">
+  <DarkWrapper id="valores">
     <div className="custom-screen text-gray-300 justify-between gap-24 lg:flex">
       <div className="max-w-xl">
         <h2 className="text-white text-3xl font-semibold sm:text-4xl">
