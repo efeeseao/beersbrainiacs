@@ -7,7 +7,7 @@ interface DarkWrapperProps extends HTMLProps<HTMLElement> {
 export const DarkWrapper = ({ children, ...props }: DarkWrapperProps) => (
   <section
     {...props}
-    className={`relative overflow-hidden bg-gray-900 py-28 my-16 sm:py-32 ${
+    className={`relative overflow-hidden bg-primary py-28 my-16 sm:py-32 ${
       props.className || ''
     }`}
   >
