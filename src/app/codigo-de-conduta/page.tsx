@@ -1,3 +1,25 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Código de Conduta | Beers & Brainiacs',
+  description: 'Regras e diretrizes da comunidade Beers & Brainiacs.',
+  openGraph: {
+    title: 'Inicio | Beers & Brainiacs',
+    description: 'Regras e diretrizes da comunidade Beers & Brainiacs.',
+    url: 'beersbrainiacs.vercel.app',
+    siteName: 'Beers & Brainiacs',
+    images: [
+      {
+        url: 'beersbrais.vercel.app/og.png',
+        width: 800,
+        height: 600
+      }
+    ],
+    locale: 'pt',
+    type: 'website'
+  }
+}
+
 export default function Page() {
   return (
     <main className="flex items-center justify-center flex-col min-h-screen">

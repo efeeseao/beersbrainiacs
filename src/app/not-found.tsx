@@ -1,4 +1,27 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Página não encontrada | Beers & Brainiacs',
+  description:
+    'A página que você está procurando não existe. Aqui estão alguns links úteis.',
+  openGraph: {
+    title: 'Inicio | Beers & Brainiacs',
+    description:
+      'A página que você está procurando não existe. Aqui estão alguns links úteis.',
+    url: 'beersbrainiacs.vercel.app',
+    siteName: 'Beers & Brainiacs',
+    images: [
+      {
+        url: 'beersbrais.vercel.app/og.png',
+        width: 800,
+        height: 600
+      }
+    ],
+    locale: 'pt',
+    type: 'website'
+  }
+}
 
 export default function Page() {
   return (
