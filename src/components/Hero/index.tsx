@@ -1,5 +1,4 @@
 import { GradientWrapper } from '@/components/GradientWrapper'
-import { NavLink } from '@/components/NavLink'
 import { IconArrowRight } from '@/icons/ArrowRight'
 
 export const Hero = () => (
@@ -15,7 +14,7 @@ export const Hero = () => (
             encontra a descontração.
           </span>
         </h1>
-        <p className="max-w-xl mx-auto">
+        <p className="max-w-2xl mx-auto">
           Prepare-se para explorar as últimas tendências tecnológicas,
           compartilhar conhecimento e se conectar com entusiastas como você,
           enquanto saboreia cervejas artesanais selecionadas. O Beer & Brainiacs
@@ -23,21 +22,16 @@ export const Hero = () => (
           mesmo tempo. Vamos criar memórias incríveis juntos!
         </p>
         <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-          <NavLink
-            href="/inscrever-se"
-            className="flex items-center gap-x-2 text-white bg-primary hover:bg-primary/90 active:bg-primary "
+          <a
+            role="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/u/0/"
+            className="py-2.5 px-4 text-center rounded-full duration-150 flex items-center gap-x-2 text-white bg-primary hover:bg-primary/90 active:bg-primary "
           >
             Participar
             <IconArrowRight />
-          </NavLink>
-          <NavLink
-            href="#cta"
-            className="flex items-center gap-x-2 text-secondary hover:text-gray-900"
-            scroll={false}
-          >
-            Saiba mais
-            <IconArrowRight />
-          </NavLink>
+          </a>
         </div>
       </div>
     </GradientWrapper>

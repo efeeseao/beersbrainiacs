@@ -11,9 +11,9 @@ export const LogoGrid = () => (
       </h2>
       <div className="mt-8 flex justify-center">
         <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-8 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
-          {logos.map((item, idx) => (
+          {logos.map(({ alt, src }, idx) => (
             <li key={idx}>
-              <Image src={item.src} alt={item.alt} />
+              <Image src={src} alt={alt} />
             </li>
           ))}
         </ul>

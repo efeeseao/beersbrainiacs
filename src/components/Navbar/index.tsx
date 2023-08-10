@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
 import { NavHeader } from '@/components/NavHeader'
-import { NavLink } from '@/components/NavLink'
 import { IconArrowRight } from '@/icons/ArrowRight'
 import { navigation } from '@/data/navLink'
 
@@ -58,13 +57,16 @@ export const Navbar = () => {
               ))}
             </ul>
             <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
-              <NavLink
-                href="/inscrever-se"
-                className="flex items-center justify-center gap-x-1 text-sm text-white font-medium bg-primary hover:bg-primary/90 active:bg-primary md:inline-flex"
+              <a
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/forms/u/0/"
+                className="py-2.5 px-4 text-center rounded-full duration-150 flex items-center justify-center gap-x-1 text-sm text-white font-medium bg-primary hover:bg-primary/90 active:bg-primary md:inline-flex"
               >
                 Participar
                 <IconArrowRight />
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>
